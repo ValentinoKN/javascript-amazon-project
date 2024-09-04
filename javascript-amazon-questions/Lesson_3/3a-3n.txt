@@ -1,0 +1,28 @@
+'My name is:'
+'My name is:'
+'Valentino'
+'Valentino'
+'My name is:' + ' Valentino'
+'My name is: Valentino'
+'Total cost: $' + (5 + 3)
+'Total cost: $8'
+`Total cost: $${5 + 3}`
+'Total cost: $8'
+alert(`Total cost: $${5 + 3}`);
+undefined
+'Total cost: $' + ((599 + 295) / 100)
+'Total cost: $8.94'
+`Total cost: $${(599 + 295) / 100}`
+'Total cost: $8.94'
+alert(`Total cost: $${(599 + 295) / 100}`);
+undefined
+alert(`Total cost: $${(599 + 295) / 100}
+Thank you, come again!`);
+`Item(${1*2 + 1*2}): $${(2 * 2095 + 2 * 799) /100}`
+'Item(4): $57.88'
+`Shipping & handling: $${(2 * 499) /100}`
+'Shipping & handling: $9.98'
+`Total before tax: $${(5788 + 998) /100}`
+'Total before tax: $67.86'
+`Estimated tax (10%): $${Math.round(6786 * 0.1) /100}`
+'Estimated tax (10%): $6.79'

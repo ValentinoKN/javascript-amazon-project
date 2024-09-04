@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8a</title>
+</head>
+<body>
+  <script>
+    const item1 = {
+        name: 'basketball',
+        price: 2095
+      };
+      const item2 = {
+        name: 'bat',
+        price: 1095
+      };
+
+  console.log(item1);
+
+  item1.price += 500;
+  
+  console.log(`${item1.price} cents`);
+  
+  item1['delivery-time'] = `3 days`;
+  
+  console.log(item1);
+  
+  function comparePrice(product1, product2) {
+
+    if (product1.price > product2.price) {
+      return item2.price;
+    } else {
+    return item1.price;
+    };
+
+  };
+
+  console.log(comparePrice(item1, item2));
+
+  function isSameProduct(product1, product2) {
+    if (product1 === product2) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  console.log(isSameProduct(item1, item2));
+  console.log('Good Morning'.toLowerCase());
+  console.log('test'.repeat(2));
+  </script>
+</body>
+</html>

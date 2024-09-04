@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11a-11x</title>
+</head>
+<body>
+  <script>
+    /*
+    const nums = [10, 20, 30];
+    nums[2] = 99;
+    console.log(nums);
+
+    function getLastValue(array) {
+      let lastIndex = array[array.length - 1];
+      console.log(lastIndex);
+    };
+
+    //getLastValue([1, 20, 22, 24, 5]);
+    getLastValue(['hi', 'hello', 'good']);
+
+    function arraySwap(array) {
+      let swapArray = array[0];
+      array[0] = array[array.length - 1];
+      array[array.length - 1] = swapArray;
+      console.log(array);
+    };
+
+    //arraySwap([1, 20, 22, 24, 5]);
+    arraySwap(['hi', 'hello', 'good']);
+    */
+
+    /*
+    for (let i = 0; i < 11; i += 2) {
+      console.log(i);
+    };
+
+    for (i = 5; i >= 0; i--) {
+      console.log(i);
+    };
+    */
+
+    /*
+    i = 0;
+    while (i < 11) {
+      console.log(i);
+      i += 2;
+    };
+
+    i = 5;
+    while (i >= 0) {
+      console.log(i);
+      i--;
+    };
+
+    function addOne(array) {
+      for (i = 0; i < array.length; i++) {
+        array[i]++;
+      };
+      console.log(array);
+    };
+
+    //addOne([1, 2, 3]);
+    addOne([-2, -1, 0, 99]);
+
+    function addNum(array, num) {
+      for (i = 0; i < array.length; i++) {
+        array[i] += num;
+      };
+      console.log(array);
+    };
+
+    //addNum([1, 2, 3], 2);
+    //addNum([1, 2, 3], 3);
+    addNum([-2, -1, 0, 99], 2);
+
+    function addArrays(array1, array2) {
+      for (i = 0; i < array1.length; i++) {
+        array1[i] += array2[i];
+      };
+      console.log(array1);
+    };
+
+    //addArrays([1, 1, 2], [1, 1, 3]);
+    addArrays([1, 2, 3], [4, 5, 6]);
+
+    function countPositive(nums) {
+      let iCount = 0;
+      for (i = 0; i <= nums.length - 1; i++) {
+        if (nums[i] > 0) {
+          iCount++;
+        };
+      };
+      console.log(iCount);
+    };
+
+    countPositive([1, -3, 5]);
+    countPositive([-2, 3, -5, 7, 10]);
+
+    function minMax(nums) {
+      let eValue = ``;
+      let iFind = nums[0];
+
+      for (i = 0; i < nums.length - 1; i++) {
+        if (iFind > nums[i]) {
+          iFind = nums[i];
+        };
+      }; 
+      
+      eValue = `min: ${iFind}, `;
+      iFind = nums[0];
+
+      for (i = 0; i < nums.length; i++) {  
+        if (iFind < nums[i]) {
+          iFind = nums[i];
+        };
+      };
+
+      eValue += `max: ${iFind}`;
+      console.log(eValue);
+    };
+
+    minMax([1, -3, 5]);
+    minMax([-2, 3, -5, 7, 10]);
+
+    function countWords(words) {
+      const object1 = {
+        apple : 0,
+        grape : 0
+      }
+      
+      for (i = 0; i < words.length; i++) {
+        if (words[i] === 'apple') {
+          object1.apple++;
+        } else {
+          object1.grape++;
+        };
+      };
+      console.log(object1);
+    };
+
+    countWords(['apple', 'grape', 'apple', 'apple']);
+    */
+
+    //const array1 = ['hello', 'world', 'search', 'good'];
+    //const array1 = ['not', 'found'];
+    //const array1 = ['hello', 'world', 'search', 'good', 'search'];
+    /*
+    let depict = false;
+    for (let i = 0; i <= array1.length; i++) {
+      if (array1[i] === 'search') {
+        depict = true;
+        console.log(i);
+        break;
+      };
+    };
+    if (depict === false) {
+      console.log(-1);
+    };
+    */
+
+    
+    function findIndex(array, word) {
+      let depict = false;
+      for (i = 0; i < array.length; i++) {
+        if (array[i] === word) {
+          depict = true;
+          return i;
+          break;
+        };
+      };
+      if (depict === false) {
+        return -1;
+      }; 
+    };
+
+    findIndex(['green', 'red', 'blue', 'red'], 'red');
+    //findIndex(['green', 'red', 'blue', 'red'], 'yellow');
+
+    /*
+    function removeEgg(foods) {
+      let reverseFoods = foods.splice(0, foods.length);
+      reverseFoods.reverse();
+      let eggless = [];
+      let count = 0;
+
+      for (i = 0; i < reverseFoods.length; i++) {
+        if (reverseFoods[i] === 'egg') {
+          count++;
+          if (count > 2) {
+            eggless.push(reverseFoods[i])
+          }else{
+            continue;
+          };
+        }else{
+          eggless.push(reverseFoods[i]);
+        };
+      };
+      eggless.reverse();
+      console.log(eggless);
+    };
+
+    removeEgg(['egg', 'apple', 'egg', 'egg', 'ham']);
+    */
+
+    /*
+    for (i = 1;i <= 20; i++) {
+      if ((i % 3 === 0) && (i % 5 === 0)) {
+        console.log('FizzBuzz');
+      } else if (i % 5 === 0) {
+        console.log('Buzz');
+      } else if (i % 3 === 0) {
+        console.log('Fizz');
+      } else {
+        console.log(i);
+      };
+    };
+    */
+   
+    function unique(array) {
+      let singleArray = [];
+      for (let i = 0; i < array.length; i++) {
+        let depict = findIndex(singleArray, array[i]);
+        
+        if (depict === -1) {
+          singleArray.push(array[i]);
+        }else{
+          continue;
+        };
+      };
+      console.log(singleArray);
+    };
+      
+    unique(['green', 'red', 'blue', 'red']);
+    unique(['red', 'green', 'green', 'red']);
+  </script>
+</body>
+</html>

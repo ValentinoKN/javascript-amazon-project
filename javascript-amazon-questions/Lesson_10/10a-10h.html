@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10a-10h</title>
+  <link rel="stylesheet" href="10a-10h.css">
+</head>
+<body>
+  <button class="cart-button">Add to Cart</button>
+  <p></p>
+  <button class="uber-button">Request now</button>  
+  <button class="schedule-button">Schedule for later</button>
+  <p></p>
+  <button onclick="classChecker()" class="js-button">Test</button>
+  <p></p>
+  <button onclick="toggle(`gaming`)" class="gaming-button">Gaming</button>
+  <button onclick="toggle(`music`)" class="music-button">Music</button>
+  <button onclick="toggle(`tech`)" class="tech-button">Tech</button>
+  <p></p>
+  <input type="text" placeholder="Cost of order" class="js-cost-input cost-input" onkeydown="
+      handleCostKeyDown(event);
+  ">
+  <button class="calculate-button" onclick="
+    calculateTotal();
+  ">Calculate</button>
+  <p class="js-total-cost"></p>
+
+  <script src="10a-10h.js"></script>
+</body>
+</html>
