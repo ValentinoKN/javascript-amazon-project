@@ -17,46 +17,58 @@
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/shared/amazon-header.css">
     <link rel="stylesheet" href="styles/pages/tracking.css">
+
+    <style>
+      .tracking-page-header .amazon-header {
+        position: static !important;
+        top: auto !important;
+      }
+      .tracking-page-main {
+        margin-top: 30px !important;
+      }
+    </style>
   </head>
   <body>
-    <div style="background: #fff3cd; color: #1f1f1f; border-bottom: 2px solid #856404; padding: 14px 18px; text-align: center; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; position: relative; z-index: 1001;">
-      <strong>DISCLAIMER: THIS IS A PERSONAL EDUCATIONAL PROJECT.</strong><br>
-      This is <strong>NOT</strong> the official Amazon website. This project is not affiliated with, endorsed by, or associated with Amazon in any way. It was created only as a learning exercise while following the SuperSimpleDev JavaScript course and does not collect user data.
+    <div class="tracking-page-header">
+      <div style="background: #fff3cd; color: #1f1f1f; border-bottom: 2px solid #856404; padding: 14px 18px; text-align: center; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <strong>DISCLAIMER: THIS IS A PERSONAL EDUCATIONAL PROJECT.</strong><br>
+        This is <strong>NOT</strong> the official Amazon website. This project is not affiliated with, endorsed by, or associated with Amazon in any way. It was created only as a learning exercise while following the SuperSimpleDev JavaScript course and does not collect user data.
+      </div>
+
+      <div class="amazon-header">
+        <div class="amazon-header-left-section">
+          <a href="index.html" class="header-link">
+            <img class="amazon-logo"
+              src="images/amazon-logo-white.png">
+            <img class="amazon-mobile-logo"
+              src="images/amazon-mobile-logo-white.png">
+          </a>
+        </div>
+
+        <div class="amazon-header-middle-section">
+          <input class="search-bar" type="text" placeholder="Search">
+
+          <button class="search-button">
+            <img class="search-icon" src="images/icons/search-icon.png">
+          </button>
+        </div>
+
+        <div class="amazon-header-right-section">
+          <a class="orders-link header-link" href="orders.html">
+            <span class="returns-text">Returns</span>
+            <span class="orders-text">& Orders</span>
+          </a>
+
+          <a class="cart-link header-link" href="checkout.html">
+            <img class="cart-icon" src="images/icons/cart-icon.png">
+            <div class="cart-quantity">3</div>
+            <div class="cart-text">Cart</div>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="amazon-header" style="position: relative; top: auto;">
-      <div class="amazon-header-left-section">
-        <a href="index.html" class="header-link">
-          <img class="amazon-logo"
-            src="images/amazon-logo-white.png">
-          <img class="amazon-mobile-logo"
-            src="images/amazon-mobile-logo-white.png">
-        </a>
-      </div>
-
-      <div class="amazon-header-middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-
-        <button class="search-button">
-          <img class="search-icon" src="images/icons/search-icon.png">
-        </button>
-      </div>
-
-      <div class="amazon-header-right-section">
-        <a class="orders-link header-link" href="orders.html">
-          <span class="returns-text">Returns</span>
-          <span class="orders-text">& Orders</span>
-        </a>
-
-        <a class="cart-link header-link" href="checkout.html">
-          <img class="cart-icon" src="images/icons/cart-icon.png">
-          <div class="cart-quantity">3</div>
-          <div class="cart-text">Cart</div>
-        </a>
-      </div>
-    </div>
-
-    <div class="main">
+    <div class="main tracking-page-main">
       <div class="order-tracking">
         <a class="back-to-orders-link link-primary" href="orders.html">
           View all orders
