@@ -17,34 +17,46 @@
     <link rel="stylesheet" href="styles/shared/general.css">
     <link rel="stylesheet" href="styles/pages/checkout/checkout-header.css">
     <link rel="stylesheet" href="styles/pages/checkout/checkout.css">
+
+    <style>
+      .educational-page-header .checkout-header {
+        position: static !important;
+        top: auto !important;
+      }
+      .checkout-page-main {
+        margin-top: 40px !important;
+      }
+    </style>
   </head>
   <body>
-    <div style="background: #fff3cd; color: #1f1f1f; border-bottom: 2px solid #856404; padding: 14px 18px; text-align: center; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5; position: relative; z-index: 1001;">
-      <strong>DISCLAIMER: THIS IS A PERSONAL EDUCATIONAL PROJECT.</strong><br>
-      This is <strong>NOT</strong> the official Amazon website. This project is not affiliated with, endorsed by, or associated with Amazon in any way. It was created only as a learning exercise while following the SuperSimpleDev JavaScript course and does not collect user data.
-    </div>
+    <div class="educational-page-header">
+      <div style="background: #fff3cd; color: #1f1f1f; border-bottom: 2px solid #856404; padding: 14px 18px; text-align: center; font-family: Arial, sans-serif; font-size: 14px; line-height: 1.5;">
+        <strong>DISCLAIMER: THIS IS A PERSONAL EDUCATIONAL PROJECT.</strong><br>
+        This is <strong>NOT</strong> the official Amazon website. This project is not affiliated with, endorsed by, or associated with Amazon in any way. It was created only as a learning exercise while following the SuperSimpleDev JavaScript course and does not collect user data.
+      </div>
 
-    <div class="checkout-header" style="position: relative; top: auto;">
-      <div class="header-content">
-        <div class="checkout-header-left-section">
-          <a href="index.html">
-            <img class="amazon-logo" src="images/amazon-logo.png">
-            <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
-          </a>
-        </div>
+      <div class="checkout-header">
+        <div class="header-content">
+          <div class="checkout-header-left-section">
+            <a href="index.html">
+              <img class="amazon-logo" src="images/amazon-logo.png">
+              <img class="amazon-mobile-logo" src="images/amazon-mobile-logo.png">
+            </a>
+          </div>
 
-        <div class="checkout-header-middle-section">
-          Checkout (<a class="return-to-home-link"
-            href="index.html">3 items</a>)
-        </div>
+          <div class="checkout-header-middle-section">
+            Checkout (<a class="return-to-home-link"
+              href="index.html">3 items</a>)
+          </div>
 
-        <div class="checkout-header-right-section">
-          <img src="images/icons/checkout-lock-icon.png">
+          <div class="checkout-header-right-section">
+            <img src="images/icons/checkout-lock-icon.png">
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="main">
+    <div class="main checkout-page-main">
       <div class="page-title">Review your order</div>
 
       <div class="checkout-grid">
